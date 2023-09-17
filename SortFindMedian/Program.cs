@@ -4,7 +4,7 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            
         }
 
         public static int[] TwoDimensionToOneDimension(int[,] matrix)
@@ -35,6 +35,19 @@
                 }
             }
             return indexSmallestElement;
+        }
+
+        //Time complexity O(n^2)
+        public static void SortArray(int[] array)
+        {
+            int length = array.Length;
+            for(int i = 0; i<length; i++)
+            {
+                int indexCurrentSmallestElement = GetIndexSmallestElement(array, i);
+                int temporal = array[indexCurrentSmallestElement];
+                array[indexCurrentSmallestElement] = array[i];
+                array[i] = temporal;
+            }
         }
 
     }

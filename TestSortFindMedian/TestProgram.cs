@@ -49,7 +49,23 @@ namespace TestSortFindMedian
         }
 
 
+        public static IEnumerable<object[]> TestDataSortArray
+            => new[]
+            {
+                new object[]{ new int[] { 3, 7, 8, 9, 15, 17, 28, 36, 57 }, new int[] { 17, 9, 36, 8, 7, 3, 15, 28, 57 }},
+                new object[]{ new int[] { 1, 2, 3, 4, 5, 6, 7, 8, 9 }, new int[] { 1, 2, 3, 4, 5, 6, 7, 8, 9 }},
+                new object[]{ new int[] { 1, 2, 3, 4, 5, 6, 7, 8, 9 }, new int[] { 9, 8, 7, 6, 5, 4, 3, 2, 1 }},
+                new object[]{ new int[] { 1, 1, 1, 1, 1, 1, 1, 1, 1 }, new int[] { 1, 1, 1, 1, 1, 1, 1, 1, 1 }},
+                new object[]{ new int[] { 1, 1, 1, 1, 1, 2, 2, 2, 2 }, new int[] { 1, 2, 1, 2, 1, 2, 1, 2, 1 }},
+                new object[]{ new int[] {1}, new int[] {1} }
 
-
+            };
+        [Theory]
+        [MemberData(nameof(TestDataSortArray))]
+        public static void Test_SortArray(int[] expectedSortedArray, int[] array)
+        {
+            Program.SortArray(array);
+            Assert.Equal(expectedSortedArray, array);
+        }
     }
 }
