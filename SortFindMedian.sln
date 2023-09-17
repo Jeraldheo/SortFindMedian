@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34031.279
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SortFindMedian", "SortFindMedian\SortFindMedian.csproj", "{6EA5454D-DE82-48F0-8FA9-AE52DFAEB816}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestSortFindMedian", "TestSortFindMedian\TestSortFindMedian.csproj", "{72008044-858F-455C-8B38-AEC07E35A5FC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6EA5454D-DE82-48F0-8FA9-AE52DFAEB816}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6EA5454D-DE82-48F0-8FA9-AE52DFAEB816}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6EA5454D-DE82-48F0-8FA9-AE52DFAEB816}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6EA5454D-DE82-48F0-8FA9-AE52DFAEB816}.Release|Any CPU.Build.0 = Release|Any CPU
+		{72008044-858F-455C-8B38-AEC07E35A5FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{72008044-858F-455C-8B38-AEC07E35A5FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{72008044-858F-455C-8B38-AEC07E35A5FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{72008044-858F-455C-8B38-AEC07E35A5FC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F572A3A7-3BF8-4D6D-A27B-867118256B21}
+	EndGlobalSection
+EndGlobal
