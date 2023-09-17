@@ -22,5 +22,20 @@
             }
             return array;
         }
+
+        public static int GetIndexSmallestElement(int[] array, int arrayIndex)
+        {
+            int indexSmallestElement = arrayIndex;
+            int length = array.Length;
+            for(int i = indexSmallestElement + 1; i<length; i++)
+            {
+                if (array[i] < array[indexSmallestElement])
+                {
+                    indexSmallestElement = i;
+                }
+            }
+            return indexSmallestElement;
+        }
+
     }
 }

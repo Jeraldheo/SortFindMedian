@@ -28,6 +28,28 @@ namespace TestSortFindMedian
             Assert.Equal(expectedArray, array);
         }
 
+        public static IEnumerable<object[]> TestDataGetIndexSmallestElement
+            => new[]
+            {
+                new object[]{5, new int[] { 17, 9, 36, 8, 7, 3, 15, 28, 57 }, 0},
+                new object[]{0, new int[] { 1, 2, 3, 4, 5, 6, 7, 8, 9 }, 0},
+                new object[]{8, new int[] { 9, 8, 7, 6, 5, 4, 3, 2, 1 }, 0},
+                new object[]{4, new int[] { 1, 2, 3, 4, 0, 6, 7, 8, 9 }, 0},
+                new object[]{3, new int[] { 2, 9, 4, 0, 7, 25, 3, 1, 19 }, 0},
+                new object[]{7, new int[] { 2, 9, 4, 0, 7, 25, 3, 1, 19 }, 4}
+
+            };
+
+        [Theory]
+        [MemberData(nameof(TestDataGetIndexSmallestElement))]
+        public static void Test_GetIndexSmallestElement(int expectedIndex, int[] array, int arrayIndex)
+        {
+            int index = Program.GetIndexSmallestElement(array, arrayIndex);
+            Assert.Equal(expectedIndex, index);
+        }
+
+
+
 
     }
 }
